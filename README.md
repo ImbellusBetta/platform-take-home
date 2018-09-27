@@ -1,5 +1,5 @@
 # platform take home
-This is a take home project for the Platform team at Imbellus.
+This is a take home project for the Platform team at Imbellus. :rocket:
 
 ## Specifications
 In this assignment, you will implement a REST API and web UI for a small web app of your design. 
