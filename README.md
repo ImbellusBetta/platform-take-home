@@ -7,7 +7,6 @@ In this assignment, you will implement a REST API and web UI for a small web app
 ## Getting started
 Since your application will use data from Google's Geocode API, you will need a Google account to complete this assignment.
 To use this repo you'll need a [github account](https://www.github.com).
-Please fork this repo and submit a pull request when you are ready to submit it. 
 
 ### Google Geocoding API key
 Obtain an API key from the Google Maps Geocoding API [here](https://developers.google.com/maps/documentation/geocoding/intro).
@@ -35,6 +34,11 @@ using any web technologies from vanilla HTML5, CSS, JS, to your favorite JavaScr
 
 ### Extension
 We encourage you to get creative and have fun with the assignment. Feel free to extend with more API endpoints, a feature-rich web client, a suite of unit- and end-to-end tests, or more! We encourage you make the server code as robust to exceptions as possible, and treat this portion as if it were production code.
+
+## When you are finished
+Please fork this repo and submit a pull request when you are ready to submit it. 
+For information or questions please email your primary point of contact, or
+write to platform@imbellus.com.
 
 ## License
 copyright 2018 Imbellus, Inc. All rights reserved.
