@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat_long: :LatLong1
+  address: Address1
+  query: mystringone
+
+two:
+  lat_long: :LatLong2
+  address: Address2
+  query: mystringtwo

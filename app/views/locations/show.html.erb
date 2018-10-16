@@ -1,0 +1,43 @@
+<br>
+<div id="lat_long">
+  <h5>Find Latitude & Longitude by Address</h5>
+  <%= form_tag '/locations/lat_long' do %>
+    <div>
+      <%= label_tag 'location[address]', 'Enter Address' %>
+      <%= text_field_tag 'location[address]' %>
+    </div>
+    <div>
+      <%= submit_tag 'Find Lat-Long', class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>
+<br><hr>
+<div id="address">
+  <h5>Find Address by Latitude & Longitude</h5>
+  <%= form_tag '/locations/address' do %>
+    <div>
+      <%= label_tag 'location[lat_long]', 'Enter Lat-Long' %>
+      <%= text_field_tag 'location[lat_long]' %>
+    </div>
+    <div>
+      <%= submit_tag 'Find Address', class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>
+<br><hr>
+<div id="geo_distance">
+  <h5>Find Distance between two locations</h5>
+  <%= form_tag '/distances/calculate' do %>
+    <div>
+      <%= label_tag 'distance[location_one]', 'Location One' %>
+      <%= text_field_tag 'distance[location_one]' %>
+    </div>
+    <div>
+      <%= label_tag 'distance[location_two]', 'Location Two' %>
+      <%= text_field_tag 'distance[location_two]' %>
+    </div>
+    <div>
+      <%= submit_tag 'Find Distance', class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>

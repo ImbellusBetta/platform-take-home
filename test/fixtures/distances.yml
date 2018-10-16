@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location_one_id: 1
+  location_two_id: 1
+  miles: 9.99
+
+two:
+  location_one_id: 1
+  location_two_id: 1
+  miles: 9.99
