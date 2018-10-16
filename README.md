@@ -22,18 +22,20 @@ Google now requires a credit card to register for developer access, but they ext
 
 ### API
 The application should expose the 3 following API endpoints.
-1. Geocode
-Returns the latitude & longitude of a given address using, for example:
+1. `/geocode`
 
+Geocode: Returns the latitude & longitude of a given address using,
+for example:
 `https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY`
 
-2. Reverse geocode
-Returns the address of a given latitude and longitude using, for example:
+2. `/reverse
 
+Reverse geocode: returns the address of a given latitude and longitude using, for example:
 `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY`
 
-3. Geometric distance
-Calculates the geometric distance in units of your choice between two lat/long coordinates, and return the distance.
+3. `/geodistance`
+
+Geometric distance. Calculates the geometric distance in units of your choice between two lat/long coordinates, and return the distance.
 You will need to do this calculation yourself.
 
 ### Client
