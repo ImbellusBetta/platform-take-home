@@ -1,4 +1,4 @@
-# platform take home
+# Platform take home
 This is a take home project for the Platform team at Imbellus.
 
 ## Specifications
@@ -28,7 +28,7 @@ Geocode: Returns the latitude & longitude of a given address using,
 for example:
 `https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY`
 
-2. `/reverse
+2. `/reverse`
 
 Reverse geocode: returns the address of a given latitude and longitude using, for example:
 `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY`
@@ -46,7 +46,7 @@ using any web technologies from vanilla HTML5, CSS, JS, to your favorite JavaScr
 We encourage you to get creative and have fun with the assignment. Feel free to extend with more API endpoints, a feature-rich web client, a suite of unit- and end-to-end tests, or more! We encourage you make the server code as robust to exceptions as possible, and treat this portion as if it were production code.
 
 ## When you are finished
-Please fork this repo and submit a pull request when you are ready to submit it. 
+Please *fork* this repo and submit a pull request when you are ready to submit it. 
 For information or questions please email your primary point of contact, or
 write to platform@imbellus.com.
 
