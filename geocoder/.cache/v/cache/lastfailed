@@ -1,0 +1,4 @@
+{
+  "tests/test_flask.py::test_empty_db": true,
+  "tests/test_flaskr.py": true
+}

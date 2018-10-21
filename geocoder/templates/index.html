@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block title %}Geocoder{% endblock %}
+
+{% block body %}
+<h1>Geocoder</h1>
+
+<div class="row">
+  <div class="col s12 green lighten-5">
+    <h4>Enter an address to receive its coordinates</h4>
+    <form id="geocode-form" action="/geocode">
+      <div class="row">
+        <div class="input-field col s8">
+          <input id="address" name="address" class="materialize-input" placeholder="Address">
+        </div>
+        <div class="input-field col s4">
+          <button class="btn waves-effect waves-light" type="submit" id="geocode_button">Generate lat/lon
+          </button>
+        </div>
+      </div>
+    </form>
+    <h5 id="geocode_result"></h5>
+    <br />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 green lighten-5">
+    <h4>Enter coordinates to retrieve their associated address</h4>
+    <form id="reverse-form" action="/reverse">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="lat" name="lat" class="materialize-input" placeholder="Latitude">
+        </div>
+        <div class="input-field col s4">
+          <input id="lng" name="lng" class="materialize-input" placeholder="Longitude">
+        </div>
+        <div class="input-field col s4">
+          <button class="btn waves-effect waves-light" type="submit" id="reverse_button">Generate address
+          </button>
+        </div>
+      </div>
+    </form>
+    <h5 id="reverse_result"></h5>
+    <br />
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12 green lighten-5">
+    <h4>Enter a pair of coordinates to obtain their distance (km)</h4>
+    <form id="geodistance-form" action="/geodistance">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="lat1" name="lat1" class="materialize-input" placeholder="Latitude 1">
+        </div>
+        <div class="input-field col s4">
+          <input id="lng1" name="lng1" class="materialize-input" placeholder="Longitude 1">
+        </div>
+        <div class="input-field col s4">
+          <button class="btn waves-effect waves-light" type="submit">Calculate distance
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="lat2" name="lat2" class="materialize-input" placeholder="Latitude 2">
+        </div>
+        <div class="input-field col s4">
+          <input id="lng2" name="lng2" class="materialize-input" placeholder="Longitude 2">
+        </div>
+      </div>
+    </form>
+    <h5 id="geodistance_result"></h5>
+    <br />
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12 green lighten-5">
+    <h4>Enter a pair of addresses to calculate their distance (km)</h4>
+    <form id="address-geodistance-form" action="/address_geodistance">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="address1" name="address1" class="materialize-input" placeholder="Address 1">
+        </div>
+        <div class="input-field col s4">
+          <input id="address2" name="address2" class="materialize-input" placeholder="Address 2">
+        </div>
+        <div class="input-field col s4">
+          <button class="btn waves-effect waves-light" type="submit">Calculate distance
+          </button>
+        </div>
+      </div>
+    </form>
+    <h5 id="address_geodistance_result"></h5>
+    <br />
+  </div>
+</div>
+
+
+{% endblock %}
