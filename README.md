@@ -28,9 +28,9 @@ in kilometers between two locations.
 You will need Python 3.0 or greater, as well as Flask, which you can install
 with pip: 
 
-'''python
+```python
 pip install flask
-'''
+```
 
 You will also need to obtain a Google API key,
 
@@ -43,7 +43,7 @@ and run `python app.py` on the command line.
 
 Unittests require pytest, which you can also install with pip:
 
-'''python
+```python
 pip install pytest
-'''
+```
 To run tests, `cd` into the root, and run `pytest` on the command line. 
