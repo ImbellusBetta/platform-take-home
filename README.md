@@ -2,7 +2,7 @@
 
 ## About
 
-Geocoder provides an inteface for Google's Geocode API, exposing the
+Geocoder provides an interface for Google's Geocode API, exposing the
 following 4 API endpoints:
 
 1. `/geocode`
