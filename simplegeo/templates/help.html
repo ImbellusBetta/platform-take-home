@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2 style="text-align: center">Help.</h2>
+  <p>This is a project I made for Imbellus. It is a basic web app with
+     the following functionality: <strong>geoencode</strong> a location,
+     <strong>reverse geoencode</strong> a location, and calculate the
+     <strong>geometric distance</strong> between two points. What follows
+     are some basic instructions on using the various features of
+     the application.
+   </p>
+   <h3 style="text-align: center">Geoencoding.</h3>
+   <p>Geocoding is the process of converting addresses (like a street address)
+     into geographic coordinates (like latitude and longitude). This
+     RESTful tool makes calls to Google's Geocoding API. By entering an
+     address (whether it be a street address, or a location), the API can
+     obtain a latitude longitude pair. For more information,
+     see <a href="https://developers.google.com/maps/documentation/geocoding/start">here.</a>
+   </p>
+   <h3 style="text-align: center">Reverse Geoencoding.</h3>
+   <p>Reverse geocoding is the exact opposite process from above. Simply enter
+     a value in degrees for latitude and longitude to see what lies at that
+     location on Earth! The only rules for these values is that latitude must
+     be between -90 and 90 degress, and longitude must be between -180 and 180
+     degrees. For more information, see <a href="https://developers.google.com/maps/documentation/geocoding/start#reverse">here.</a>
+   </p>
+   <h3 style="text-align: center">Geometric Distance.</h3>
+   <p>Calculating the geometric distance between two locations makes use of the
+     <a href="https://en.wikipedia.org/wiki/Haversine_formula">Haversine
+       formula</a>. This is used to calculate determines the great-circle
+       distance between two points on a sphere given their longitudes and
+       latitudes.
+   </p>
+{% endblock %}
