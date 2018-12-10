@@ -4,8 +4,8 @@ was created using Flask.
 
 ## Setup
 * Install all packages in requirements.txt
-* Create your own Geocode API Key and replace in app.py
-* Run `python3 simplegeo/app.py` and visit [localhost](http://localhost:5000/)
+* Obtain your [Geocode API Key](https://developers.google.com/maps/documentation/geocoding/get-api-key) and update API_KEY in app.py
+* Run `python3 simplegeo/app.py` and visit [here](http://localhost:5000/)
 
 ## Testing
 * From root, run `python -m pytest tests`
