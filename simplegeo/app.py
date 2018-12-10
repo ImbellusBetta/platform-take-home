@@ -8,7 +8,7 @@ from haversine import haversine
 
 # constants - geocoding endpoint & API key (replace this with your API key, should be secret)
 GEOCODE_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json'
-API_KEY = 'AIzaSyC_G8IdhaEqWEkXrlKHBtkFtSr6zonMnS4'
+API_KEY = ''
 
 # setup app with Bootstrap & Navbar
 app = Flask(__name__)
