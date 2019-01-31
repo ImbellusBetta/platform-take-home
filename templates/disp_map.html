@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/button.css') }}">
+  <head>
+    <title>Location</title>
+    <style>
+      #map {
+        height: 80%;
+        width: 100%;
+       }
+       html, body {
+  text-align: center;
+        height: 100%;
+        margin: 0;
+        padding: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+</div>
+    <script>
+function initMap() {
+  var loc = {lat: {{latitude}}, lng: {{longitude}}};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: loc});
+  var marker = new google.maps.Marker({position: loc, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{key}}&callback=initMap">
+    </script>
+    
+
+  </body>
+</html>

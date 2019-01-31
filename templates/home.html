@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/button.css') }}">
+  <title>Steven's Location Extravaganza</title>
+</head>
+  <body>
+  	<div class="button-container">
+  		<h3>Welcome to Steven's Location Extravaganza!</h3><br>
+  	What would you like to do?<br>
+  	<form action="/" method="POST" id="choices">
+
+  	<button type="submit" class="button" name="convert_lat_long_to_address_button">
+  		Convert a lat/long coordinate to an address.
+  	</button>
+  	<br>
+  	<button type="submit" class="button" name="convert_address_to_lat_long_button">
+		Convert an address to a lat/long coordinate.
+  	</button>
+  	<br>
+  	<button type="submit" class="button" name="calculate_distance_button">
+  		Calculate the distance between two lat/long coordinates.
+  	</button>
+  	<br>
+  	<button type="submit" class="button" name="logout_button">
+  		Remove your API key from this session.
+  	</button>
+
+  </form>
+</div>
+  </body>
+</html>
